@@ -1,8 +1,8 @@
-/Users/mnatara/ideathon/corona-app/src/main/java/com/soma/handlers/HelloWorldIntentHandler.java
-/Users/mnatara/ideathon/corona-app/src/main/java/com/soma/handlers/FallbackIntentHandler.java
-/Users/mnatara/ideathon/corona-app/src/main/java/com/soma/handlers/CancelandStopIntentHandler.java
-/Users/mnatara/ideathon/corona-app/src/main/java/com/soma/coronafaq/HelloWorldStreamHandler.java
-/Users/mnatara/ideathon/corona-app/src/main/java/com/soma/handlers/LaunchRequestHandler.java
-/Users/mnatara/ideathon/corona-app/src/main/java/com/soma/handlers/HelpIntentHandler.java
-/Users/mnatara/ideathon/corona-app/src/main/java/com/soma/handlers/SessionEndedRequestHandler.java
-/Users/mnatara/ideathon/corona-app/src/main/java/com/soma/handlers/WhatIsCoronaHandler.java
+/Users/mnatara/ideathon/ideathon/corona-app/src/main/java/com/soma/handlers/HelloWorldIntentHandler.java
+/Users/mnatara/ideathon/ideathon/corona-app/src/main/java/com/soma/handlers/SessionEndedRequestHandler.java
+/Users/mnatara/ideathon/ideathon/corona-app/src/main/java/com/soma/coronafaq/HelloWorldStreamHandler.java
+/Users/mnatara/ideathon/ideathon/corona-app/src/main/java/com/soma/handlers/WhatIsCoronaHandler.java
+/Users/mnatara/ideathon/ideathon/corona-app/src/main/java/com/soma/handlers/LaunchRequestHandler.java
+/Users/mnatara/ideathon/ideathon/corona-app/src/main/java/com/soma/handlers/CancelandStopIntentHandler.java
+/Users/mnatara/ideathon/ideathon/corona-app/src/main/java/com/soma/handlers/HelpIntentHandler.java
+/Users/mnatara/ideathon/ideathon/corona-app/src/main/java/com/soma/handlers/FallbackIntentHandler.java

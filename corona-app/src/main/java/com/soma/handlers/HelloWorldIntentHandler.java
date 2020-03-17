@@ -17,11 +17,13 @@ public class HelloWorldIntentHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Welcome to SOMA Company!, So cool to build your first skill. Hey Sohana, This is just an example but we will add more FAQ's on Corona like" +
-                "What is COVID-19, What are it's symptoms, preventive measures, total number corona reports across geographies, etc";
+        String speechText = "So cool to build CORONA GUIDE skill. This is just an example but we will add more FAQ's on Corona like " +
+        "What is COVID-19, What are it's symptoms, preventive measures, total number corona reports across geographies, etc. \n" +
+                " Please stay tuned!";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
-                .withSimpleCard("HelloWorld", speechText)
+                .withSimpleCard("Corona Guide", speechText)
+                .withShouldEndSession(Boolean.FALSE)
                 .build();
     }
 }

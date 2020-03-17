@@ -17,11 +17,12 @@ public class WhatIsCoronaHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Coronaviruses (CoV) are a large family of viruses that cause illness " +
+        String speechText = "Coronaviruses (C.O.V) are a large family of viruses that cause illness " +
                 "ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome  and Severe Acute Respiratory Syndrome ";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
                 .withSimpleCard("What's Corona", speechText)
+                .withShouldEndSession(Boolean.FALSE)
                 .build();
     }
 }

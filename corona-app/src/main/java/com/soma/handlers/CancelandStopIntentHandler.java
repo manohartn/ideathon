@@ -16,15 +16,15 @@ public class CancelandStopIntentHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Thank you for using Cornoa Guide To combat COVID-19 pandemic, W H O has started the COVID-19 Solidarity Fund " +
-                "Response. I have sent you a link to W H O COVID-19 Fund raiser to " +
-                "your alexa app  here you can learn more and donate as well. Donations support efforts to track and understand the spread of the virus; " +
-                "to ensure patients get the care they need";
-        final String covid19Link = "https://www.facebook.com/donate/1564752357011737/10163057684300177/";
+        String speechText = "Thank you for using Corona Guide. To combat COVID-19 pandemic, W.H.O has started the COVID-19 Solidarity Fund " +
+                "I have sent you a link to W.H.O COVID-19 Fund raiser to " +
+                "your alexa app where you can learn more and donate as well";
+        final String whoSolidarityFundForCorona = "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
-                .withSimpleCard(covid19Link, speechText)
+                .withSimpleCard("Corona Donations", whoSolidarityFundForCorona)
                 .withReprompt(speechText)
+                .withShouldEndSession(Boolean.TRUE)
                 .build();
     }
 
