@@ -1,0 +1,8 @@
+com/soma/coronafaq/HelloWorldStreamHandler.class
+com/soma/handlers/HelloWorldIntentHandler.class
+com/soma/handlers/FallbackIntentHandler.class
+com/soma/handlers/HelpIntentHandler.class
+com/soma/handlers/LaunchRequestHandler.class
+com/soma/handlers/WhatIsCoronaHandler.class
+com/soma/handlers/CancelandStopIntentHandler.class
+com/soma/handlers/SessionEndedRequestHandler.class
