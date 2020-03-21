@@ -17,11 +17,12 @@ public class HelpIntentHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "You can say hello to me!";
+        String speechText = "Welcome to CORONA GUIDE skill. You can ask me things like: \n " +
+                "What is COVID-19, What is Corona Virus, What are it's symptoms, Preventive Measures, Total number corona reports across geographies, etc. \n";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
-                .withSimpleCard("HelloWorld", speechText)
-                .withReprompt(speechText)
+                .withSimpleCard("Corona Guide Help", speechText)
+                .withShouldEndSession(Boolean.FALSE)
                 .build();
     }
 }

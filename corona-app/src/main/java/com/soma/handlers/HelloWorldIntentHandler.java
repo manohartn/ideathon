@@ -12,14 +12,13 @@ public class HelloWorldIntentHandler implements RequestHandler {
     @Override
     public boolean canHandle(HandlerInput input) {
 
-        return input.matches(Predicates.intentName("HelloWorldIntent"));
+        return input.matches(Predicates.intentName("HelpIntent"));
     }
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "So cool to build CORONA GUIDE skill. This is just an example but we will add more FAQ's on Corona like " +
-        "What is COVID-19, What are it's symptoms, preventive measures, total number corona reports across geographies, etc. \n" +
-                " Please stay tuned!";
+        String speechText = "Welcome to CORONA GUIDE skill. You can ask me things like: \n " +
+        "What is COVID-19, What is Corona Virus, What are it's symptoms, Preventive Measures, Total number corona reports across geographies, etc. \n";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
                 .withSimpleCard("Corona Guide", speechText)
