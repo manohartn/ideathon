@@ -17,7 +17,7 @@ public class FallbackIntentHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Sorry, I had trouble understanding you but here are sample utterances you can make: \n " +
+        String speechText = "Sorry, I had trouble understanding you but here are the sample utterances you can make: \n " +
                 "What is COVID-19, What is Corona Virus, What are it's symptoms, Preventive Measures, Total number corona reports across geographies, etc. " +
                 "If you want to exit the skill just say bye!\n";
         return input.getResponseBuilder()

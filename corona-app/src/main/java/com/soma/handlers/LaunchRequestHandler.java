@@ -17,7 +17,7 @@ public class LaunchRequestHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Welcome to Corona Info World. Feel free to ask me anything about Corona, Seriously anything!";
+        String speechText = "Welcome to Corona Guide skill. Feel free to ask me anything about COVID-19 or Corona Virus";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
                 .withSimpleCard("CoronaGuideLaunch", speechText)

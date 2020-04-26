@@ -17,15 +17,15 @@ public class CoronaProtectionHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Stay aware of the latest information on the COVID-19 outbreak," +
+        String speechText = "Stay aware of the latest information on the COVID-19 outbreak. \n " +
                 "Recommended Measures to protect from COVID- 19 are : Regularly and thoroughly clean your hands " +
                 "with an alcohol-based hand rub or wash them with soap and water. " +
-                "To help stop Corona Virus, these are the FIVE DO's recommended by W.H.O : " +
+                "\n To help stop Corona Virus, these are the FIVE DO's recommended by W.H.O : " +
                 "One. Wash hands Often. " +
                 "Two. Elbow Cough into it. " +
                 "Three. Don't touch your face or nose. " +
-                "Four. Maintain 3 feet or more distance from other person. " +
-                "Five. If you feel sick, please stay home\n";
+                "Four. Maintain 6 feet or more distance from other people. " +
+                "Five. If you feel sick, please stay home.\n";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
                 .withSimpleCard("Corona Protection", speechText)

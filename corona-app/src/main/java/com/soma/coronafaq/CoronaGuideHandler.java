@@ -7,6 +7,7 @@ import com.soma.handlers.CancelandStopIntentHandler;
 import com.soma.handlers.ContractedCoronaHandler;
 import com.soma.handlers.CoronaProtectionHandler;
 import com.soma.handlers.CoronaReportsHandler;
+import com.soma.handlers.CoronaSpreadHandler;
 import com.soma.handlers.CoronaSymptomsHandler;
 import com.soma.handlers.CoronaTreatmentHandler;
 import com.soma.handlers.FallbackIntentHandler;
@@ -25,6 +26,7 @@ public class CoronaGuideHandler extends SkillStreamHandler {
                         new HelloWorldIntentHandler(),
                         new WhatIsCoronaHandler(),
                         new WhatIsCovid19Handler(),
+                        new CoronaSpreadHandler(),
                         new HelpIntentHandler(),
                         new LaunchRequestHandler(),
                         new CancelandStopIntentHandler(),
